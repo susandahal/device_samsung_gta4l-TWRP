@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gta4l.mk
+    $(LOCAL_DIR)/twrp_gta4l.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_gta4l-user \
-    omni_gta4l-userdebug \
-    omni_gta4l-eng
+    twrp_gta4l-eng
