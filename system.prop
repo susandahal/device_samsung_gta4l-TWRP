@@ -1,5 +1,4 @@
 ro.virtual_ab.enabled=true
-ro.product.board=gta4l
 ro.board.platform=bengal
 sys.usb.controller=4e00000.dwc3
 sys.usb.rndis.func.name=rndis_bam
