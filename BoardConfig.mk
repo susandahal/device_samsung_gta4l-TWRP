@@ -141,6 +141,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_DEVICE_VERSION := KELVIN NINO
 TW_INCLUDE_MTP := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+#TW_ROTATION := 90
 
 # PBRP specific build flags
 PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
