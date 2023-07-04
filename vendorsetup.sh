@@ -88,6 +88,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export AVBTOOL=external/avb
     
     export OF_KEEP_FORCED_ENCRYPTION="1"
+    
     # Create Odin Flashable .tar files
-  
     export OF_NO_SAMSUNG_SPECIAL=0
