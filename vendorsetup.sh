@@ -72,6 +72,17 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 
     export OF_MAINTAINER="1"
+    
+	 # Screen Resolution - 2000x1200
+	 export OF_SCREEN_H=1800
 
+   # whether to permit free access to internal storage
+	if [ "$FOX_VARIANT" = "strict" ]; then
+	   export OF_FORCE_CREATE_DATA_MEDIA_ON_FORMAT=0
+	   export OF_RUN_POST_FORMAT_PROCESS=1
+	else
+	   export OF_FORCE_CREATE_DATA_MEDIA_ON_FORMAT=1
+	fi
+ 
     # export FOX_BOARD_AVB_ENABLE=1
     # export AVBTOOL=external/avb
