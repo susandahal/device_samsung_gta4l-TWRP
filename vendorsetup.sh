@@ -42,9 +42,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_BUILD_TYPE=Alpha
     # export FOX_ENABLE_LAB=1
     
-    export OF_AB_DEVICE_WITH_RECOVERY_PARTITION=1
+    export OF_DEVICE_WITH_RECOVERY_PARTITION=1
     export ALLOW_MISSING_DEPENDENCIES=true
-    export OF_AB_DEVICE=1
+    export OF_AB_DEVICE=0
     export OF_USE_MAGISKBOOT=1
     export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 
