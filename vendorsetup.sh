@@ -77,7 +77,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
      
     # Screen Resolution - 2000x1200
     export OF_SCREEN_H=1800
-
+ 
+   ## 添加橙狐特殊处理
+    # 设定recovery、system、vendor、boot分区路径
+    export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/by-name/recovery"
+    export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+    export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+    export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
+   
     # whether to permit free access to internal storage
 	if [ "$FOX_VARIANT" = "strict" ]; then
     export OF_FORCE_CREATE_DATA_MEDIA_ON_FORMAT=0
