@@ -155,3 +155,8 @@ RECOVERY_TOUCHSCREEN_FLIP_Y := true
 # Resolution
 TARGET_SCREEN_WIDTH := 1200
 TARGET_SCREEN_HEIGHT := 2000
+
+
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_TORCH_PATH := "/sys/class/leds/flashlight"
