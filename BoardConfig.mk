@@ -144,13 +144,13 @@ TW_INCLUDE_MTP := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # swap x anf y axis for touch
-RECOVERY_TOUCHSCREEN_SWAP_XY := true
+#RECOVERY_TOUCHSCREEN_SWAP_XY := true
 
 # flip x axis for touch
-RECOVERY_TOUCHSCREEN_FLIP_X := true
+#RECOVERY_TOUCHSCREEN_FLIP_X := true
 
 # flip y axis for touch,
-RECOVERY_TOUCHSCREEN_FLIP_Y := true
+#RECOVERY_TOUCHSCREEN_FLIP_Y := true
 
 # Resolution
 TARGET_SCREEN_WIDTH := 1200
